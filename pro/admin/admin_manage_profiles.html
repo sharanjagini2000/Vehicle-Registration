@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url('/pro/img/login.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 40px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.container {
+  margin: auto;
+  width: 80%;
+  border-radius: 50px;
+  border: none;
+  padding: 16px;
+  background-color: none;
+}
+.column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+}
+</style>
+
+</head>
+<body>
+<center>
+<h2 style="color:white">MANAGE PROFILES</h2>
+<div class = "container">
+<div class="column">
+<a href="/pro/admin/admin_add_profiles.html"><img src="/pro/img/add_user.png" alt="Add Profiles"><label style="font-size:25px;color:white" ><br></br>Add Profiles</label></a><br></br>
+</div>
+<div class="column">
+<a href="/pro/admin/admin_delete_profiles.html"><img src="/pro/img/delete_user.png" alt="Delete Profiles"><label style="font-size:25px;color:white" ><br></br>Delete Profiles</label></a><br></br>
+</div>
+<div class="column">
+<a href="/pro/admin/admin_modify_profiles.html"><img src="/pro/img/modify_profile.png" alt="Modify Profiles"><label style="font-size:25px;color:white" ><br></br>Modify Profiles</label></a><br></br>
+</div>
+</div>
+</body>
+</html>

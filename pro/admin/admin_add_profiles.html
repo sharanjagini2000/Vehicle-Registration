@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Add padding to containers */
+    .container {
+      padding: 16px;
+      background-color: white;
+    }
+
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    /* Set a style for the submit button */
+    .registerbtn {
+      background-color: DodgerBlue;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+      background-color: RoyalBlue;
+    }
+
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="admin_add_profiles.php" method="post">
+    <div class="container">
+      <h2>ADD NEW USERS HERE</h2>
+      <hr>
+
+      <label for="firstname"><b>First Name</b></label>
+      <input type="text" placeholder="First Name" name="firstname" id="firstname" required>
+
+      <label for="lastname"><b>Last Name</b></label>
+      <input type="text" placeholder="Last Name" name="lastname" id="lastname" required>
+
+      <label for="username"><b>userName</b></label>
+      <input type="text" placeholder="UserName" name="username" id="username" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="example@email.com" name="email" id="email" required>
+
+      <label for="ssn"><b>Social Security Number</b></label>
+      <input type="text" placeholder="SSN" name="ssn" id="ip" required><br></br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Password" name="password" id="password" required>
+
+      <label for="mobile"><b>Mobile</b></label>
+      <input type="tel" id="mobile" name="mobile" placeholder="9876543210" pattern="[0-9]{10}" required><br></br>
+
+      <label for="Roles">ADD user as :</label>
+      <select name="roles" id="roles">
+        <option value="admin">Admin</option>
+        <option value="agent">AGENT</option>
+        <option value="user">User</option>
+        <option value="rto">Rto</option>
+      </select><br></br>
+
+      <label for="Gender">Select Gender :</label>
+      <select name="gender" id="gender">
+        <option value="male">MALE</option>
+        <option value="female">FEMALE</option>
+        <option value="other">OTHER</option>
+      </select>
+
+      <hr>
+      <button type="submit" value="submit" onClick="checkForm()" class="registerbtn">ADD USER</button>
+    </div>
+
+    <div class="container signin">
+    </div>
+  </form>
+</body>
+
+</html>

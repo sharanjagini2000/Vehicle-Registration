@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  width: 25%;
+  border-radius: 25px;
+  border: 2px solid #609;
+  padding: 16px;
+  background-color: #b6c0ec;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.button {
+  background-color: white; 
+  color: black; 
+  margin: 8px 8px;
+  border: 2px solid #3C61A7;
+  border-radius: 30px;
+  width: 180%;
+}
+button {
+  background-color: #3C61A7;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  margin: 8px 8px;
+  border: 2px solid #3C61A7;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 95%;
+}
+.button:hover {
+  background-color: #3C61A7;
+  color: white;
+}
+#ip {
+    border-radius: 25px;
+    border: 2px solid #609;
+    text-align: center;
+    padding: 20px; 
+    width: 300px;
+    height: 5px;    
+}
+#roles {
+border-radius: 15px;
+width:100px;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+body {
+  background-image: url('/pro/img/login.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+<form action="msearch.php" method="post">
+  <h1>Search Requested Registrations by VIN number<h1>
+  <div class="container"> 
+    <hr>
+    <input type="text" placeholder="search by VIN" name="search" id="ip" required>
+    <hr>
+
+    <button type="submit" value="submit" onClick="checkForm()" class="registerbtn">Search</button>
+    </div>
+</form>
+</body>
+</html>
+
